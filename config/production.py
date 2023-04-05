@@ -39,7 +39,7 @@ conn_str_params = {pair.split('=')[0]: pair.split('=')[1] for pair in conn_str.s
 #los ponemos en la config de la base de datos
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgres_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': conn_str_params['dbname'],
         'HOST': conn_str_params['host'],
         'USER': conn_str_params['user'],
